@@ -12,6 +12,3 @@ galaxy_info:
   - name: Amazon
     versions:
     - 2015.09
-dependencies:
-- role: juwai.common
-  when: ansible_distribution != 'Amazon'
