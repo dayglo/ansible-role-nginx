@@ -18,7 +18,7 @@ None.
 Dependencies
 ------------
 
-juwai.common, when ansible_distribution is not 'Amazon'.
+Requires epel or some other yum repository with nginx package.
 
 Example Playbook
 ----------------

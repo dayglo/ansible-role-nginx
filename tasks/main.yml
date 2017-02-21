@@ -2,19 +2,11 @@
 ---
 - name: Ensure nginx is installed
   yum:
-    name: nginx16
-    state: installed
-    disable_gpg_check: yes
-  when: ansible_distribution != 'Amazon'
-
-- name: Ensure nginx is installed
-  yum:
-    name: nginx
-    state: installed
-  when: ansible_distribution == 'Amazon'
+    name: 'nginx'
+    state: 'installed'
 
 - name: Ensure nginx start on boot
   service:
-    name: nginx
-    state: started
+    name: 'nginx'
+    state: 'started'
     enabled: yes
